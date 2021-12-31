@@ -1,0 +1,152 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-style: inherit;
+  font-family: "Outfit", sans-serif;
+  line-height: 1.6;
+  color: #8bacda;
+  font-size: 1.6rem;
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  color: white;
+  margin-top: 1rem;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.main {
+  background-color: #0d192b;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  font-size: 1.8rem;
+}
+
+.container {
+  background-color: #14253d;
+  width: 32.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2.25rem;
+  border-radius: 1rem;
+}
+
+.container > span {
+  height: 0.03rem;
+  width: 100%;
+  background-color: #8bacda;
+  justify-self: center;
+}
+
+.container__icon-pair {
+  display: flex;
+  align-items: center;
+}
+
+.container__icon-text {
+  margin-left: 0.8rem;
+}
+
+.container__icon-text--1 {
+  margin-right: auto;
+  color: #00fff7;
+}
+
+.container__image {
+  position: relative;
+  height: 27.7rem;
+  width: 28.1rem;
+}
+
+.container__image:hover .container__overlay {
+  opacity: 0.5;
+}
+
+.container__img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.container__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  border-radius: 1rem;
+  transition: opacity 0.2s ease-in-out;
+  background-color: #00fff7;
+  cursor: pointer;
+}
+
+.container__title {
+  color: white;
+  transition: all 0.2s;
+}
+
+.container__title:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.container__icon {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+.container__avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.container__footer {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.container__footer > p {
+  margin-left: 1.2rem;
+}
+
+.container__footer > p > span {
+  color: white;
+  transition: all 0.2s;
+}
+
+.container__footer > p > span:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
